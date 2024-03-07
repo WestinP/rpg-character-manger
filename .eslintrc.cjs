@@ -14,6 +14,10 @@ module.exports = {
 		ecmaVersion: 2020,
 		extraFileExtensions: ['.svelte']
 	},
+	rules: {
+		'@typescript-eslint/no-explicit-any': 'on',
+		'@typescript-eslint/no-non-null-assertion': 'on',
+	},
 	env: {
 		browser: true,
 		es2017: true,
@@ -24,7 +28,11 @@ module.exports = {
 			files: ['*.svelte'],
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
-				parser: '@typescript-eslint/parser'
+				parser: '@typescript-eslint/parser',
+				rules: {
+					'@typescript-eslint/no-explicit-any': 'on',
+					'@typescript-eslint/no-non-null-assertion': 'on',
+				}
 			}
 		}
 	]
