@@ -8,7 +8,7 @@
      using tauri invoke to call the greet function
 	 notice how we are using tauri like an API to call the greet function
 	 * hints the async structure of the function
-	 NEET !
+	 NEAT !
      * */
 	async function greet() {
 		greeting = await invoke('greet', { name });

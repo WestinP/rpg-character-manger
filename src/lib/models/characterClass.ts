@@ -4,9 +4,10 @@ export class CharacterClass {
     name: string;
     photo: CharacterPhoto;
     classType: string;
-    notes: string = "";
+    notes: string[] = [];
+    feats: string[] = [];
     health: number = 15;
-    armorClass: number;
+    armorClass: number = 0;
     movement: number = 15;
     level: number = 1;
 
@@ -26,11 +27,10 @@ export class CharacterClass {
     charismaSavingThrow: number;
     constitutionSavingThrow: number;
 
-    constructor(name: string, photo: CharacterPhoto, classType: string, armorClass: number, strength: number, dexterity: number, intelligence: number, wisdom: number, charisma: number, constitution: number) {
+    constructor(name: string, photo: CharacterPhoto, classType: string, strength: number, dexterity: number, intelligence: number, wisdom: number, charisma: number, constitution: number) {
         this.name = name;
         this.photo = photo;
         this.classType = classType;
-        this.armorClass = armorClass;
         this.strength = strength;
         this.dexterity = dexterity;
         this.intelligence = intelligence;
@@ -47,18 +47,3 @@ export class CharacterClass {
         this.constitutionSavingThrow = Math.floor((constitution - 10) / 2);
     }
 }
-
-
-
-// strengthSavingThrow: number;
-// dexteritySavingThrow: number;
-// intelligenceSavingThrow: number;
-// wisdomSavingThrow: number;
-// charismaSavingThrow: number;
-// constitutionSavingThrow: number;
-// strength: number;
-// dexterity: number;
-// intelligence: number;
-// wisdom: number;
-// charisma: number;
-// constitution: number;
