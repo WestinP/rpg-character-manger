@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tabler/icons-svelte": "^3.0.0",
 		"@tauri-apps/api": "^1.5.3",
 		"timer": "^1.0.1"
 	}
